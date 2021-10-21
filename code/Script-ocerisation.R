@@ -14,10 +14,12 @@ library("magrittr")  # Pour chaîner les opérations avec %>%
 
 setwd("~/Desktop/Images-Gaspard/")
 
-# Fichiers txt :
+# Fichiers png (listage) :
 list_of_files <- list.files(recursive = TRUE,
                             pattern = "*.png",
                             full.names = TRUE)
+
+# Loop pour créer un txt pour chaque image :
 
 for (i in list_of_files) {
     
@@ -29,7 +31,6 @@ for (i in list_of_files) {
         
   }
 
-# Comment looper sur les résultats pour avoir une création de txt 
 
 
 
